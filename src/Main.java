@@ -6,15 +6,15 @@ import java.util.concurrent.Executor;
 public class Main {
     public static void main(String[] args) {
 
-        String url = "jdbc:mysql://localhost:3306/estudiantes2024A";
-        String user = "root";
-        String password = "123456";
+        String URL = "jdbc:mysql:// sql10.freemysqlhosting.net:3306/sql10720936";
+        String USER = "sql10720936";
+        String PASSWORD = "TQeMDi1ru2";
         Connection conexion = null;
         PreparedStatement pstmt = null;
 
         try {
             //establecer conexion
-            conexion = DriverManager.getConnection(url,user,password);
+            conexion = DriverManager.getConnection(URL,USER,PASSWORD);
             //preparar la sentencia sql
             String sql = "UPDATE estudiante SET bimestreUno= ? WHERE cedula=?";
             pstmt = conexion.prepareStatement(sql);
@@ -27,8 +27,6 @@ public class Main {
             System.out.println(sql);
             int result=pstmt.executeUpdate();
             System.out.println("Se actualizo "+result+" filas");
-
-
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         } finally {
