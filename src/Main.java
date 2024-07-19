@@ -13,6 +13,7 @@ public class Main {
         PreparedStatement pstmt = null;
 
         try {
+
             //establecer conexion
             conexion = DriverManager.getConnection(URL,USER,PASSWORD);
             //preparar la sentencia sql
