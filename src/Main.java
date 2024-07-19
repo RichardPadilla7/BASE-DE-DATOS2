@@ -6,9 +6,9 @@ import java.util.concurrent.Executor;
 public class Main {
     public static void main(String[] args) {
 
-        String URL = "jdbc:mysql:// sql10.freemysqlhosting.net:3306/sql10720936";
-        String USER = "sql10720936";
-        String PASSWORD = "TQeMDi1ru2";
+        String URL = "jdbc:mysql:// sql10.freemysqlhosting.net:3306/sql10720954";
+        String USER = "sql10720954";
+        String PASSWORD = "LtqHn5Canf";
         Connection conexion = null;
         PreparedStatement pstmt = null;
 
